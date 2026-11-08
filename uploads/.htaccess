@@ -1,0 +1,7 @@
+# Uploaded photos are plain images: never run anything from this folder.
+Options -ExecCGI
+RemoveHandler .php .phtml
+RemoveType .php .phtml
+<FilesMatch "\.(php|phtml|phar)$">
+    Require all denied
+</FilesMatch>

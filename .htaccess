@@ -1,0 +1,5 @@
+# Apache / XAMPP: keep the database, the schema and the helper scripts away from browsers.
+<FilesMatch "(^(database|setup|adduser|router)\.php$|\.(db|sqlite|sql|md)(-wal|-shm)?$)">
+    Require all denied
+</FilesMatch>
+Options -Indexes
